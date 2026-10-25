@@ -26,7 +26,7 @@ class Resultado<T> {
 
 class ApiService {
   /// IP local del backend FastAPI.
-  static const String baseUrl = 'http://192.168.1.5:8000/api';
+  static const String baseUrl = 'https://appfutbol-wo2u.onrender.com/api';
 
   /// Host sin el sufijo /api, para las imágenes servidas como archivos estáticos.
   static String get hostBase => baseUrl.replaceAll('/api', '');

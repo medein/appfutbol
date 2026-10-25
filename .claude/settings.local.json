@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"F:\\\\\" -Directory -Depth 2 -ErrorAction SilentlyContinue | Where-Object { Test-Path \\(Join-Path $_.FullName \"pubspec.yaml\"\\) } | Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem \"D:\\\\APP_FUTBOL\\\\lib\" -Recurse -File | ForEach-Object { $_.FullName.Replace\\(\"D:\\\\APP_FUTBOL\\\\\",\"\"\\) })",
+      "PowerShell(Get-ChildItem \"D:\\\\APP_FUTBOL\\\\.claude\" -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }; Write-Output \"---\"; Get-ChildItem \"F:\\\\Proyecto de graduacion\" -Filter \"CLAUDE.md\" -Recurse -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem \"F:\\\\Proyecto de graduacion\\\\canchas-api\" -Directory -Force | Select-Object Name; Write-Output \"--- python ---\"; \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; python --version)",
+      "PowerShell($py = \"F:\\\\Proyecto de graduacion\\\\canchas-api\\\\venv\\\\Scripts\\\\python.exe\"; if \\(Test-Path $py\\) { & $py --version; & $py -m pip list --format=freeze } else { Write-Output \"no venv python\" })"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "187277252854",
+    "project_id": "profutbolapp",
+    "storage_bucket": "profutbolapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187277252854:android:1bad99866938362fde74d7",
+        "android_client_info": {
+          "package_name": "com.appfutbol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMzdGwQIjOMM4wM-m43d9RGmZsJ-fhXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "187277252854-3jnfufd885pk0mm5jbm6qib3imhp2hsi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.profutbol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187277252854:android:63b5569f26a3b69bde74d7",
+        "android_client_info": {
+          "package_name": "com.example.app_futbol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187277252854-660nj8o7je89qi4pglb4oo0pl6kkhm05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_futbol",
+            "certificate_hash": "6be1c2ebb96a48b6227224c4841c43bb07b1e2b4"
+          }
+        },
+        {
+          "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMzdGwQIjOMM4wM-m43d9RGmZsJ-fhXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "187277252854-3jnfufd885pk0mm5jbm6qib3imhp2hsi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.profutbol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187277252854:android:157c105c47ef912fde74d7",
+        "android_client_info": {
+          "package_name": "com.example.profutbol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187277252854-akrm00pe6t71a77ncthspct67u92es26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.profutbol",
+            "certificate_hash": "6be1c2ebb96a48b6227224c4841c43bb07b1e2b4"
+          }
+        },
+        {
+          "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMzdGwQIjOMM4wM-m43d9RGmZsJ-fhXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187277252854-b78tfnght5npg19dsgb0s11pjgi74mq1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "187277252854-3jnfufd885pk0mm5jbm6qib3imhp2hsi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.profutbol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

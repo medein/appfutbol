@@ -1,0 +1,41 @@
+# ===== Variables de entorno =====
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Ignora todos los .env en cualquier subcarpeta (backend y frontend)
+**/.env
+**/.env.*
+
+# ===== Node / dependencias =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Builds =====
+dist/
+build/
+.next/
+out/
+
+# ===== Logs =====
+logs/
+*.log
+
+# ===== Sistema operativo =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Python (si tu backend es Python) =====
+__pycache__/
+*.pyc
+venv/
+.venv/

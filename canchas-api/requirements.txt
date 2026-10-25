@@ -1,0 +1,29 @@
+﻿# Dependencias directas de la API. pip resuelve las transitivas.
+# Instalar con:  venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# Framework web
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Base de datos MySQL
+SQLAlchemy==2.0.25
+PyMySQL==1.1.0
+
+# Validacion y configuracion
+pydantic==2.13.4
+pydantic-settings==2.1.0
+email-validator==2.3.0
+python-dotenv==1.0.0
+
+# Autenticacion (JWT + hash de contrasenas)
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+
+# Login con Google (verificacion del id_token)
+google-auth==2.57.0
+requests==2.34.2
+
+# Chatbot con Gemini
+google-genai==2.20.0

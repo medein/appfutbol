@@ -1,10 +1,21 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from app.config import settings
 
-# pool_pre_ping evita errores de "MySQL server has gone away" por conexiones inactivas
-engine = create_engine(settings.database_url, pool_pre_ping=True, pool_recycle=3600)
+# Lee la URL desde las variables de entorno
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+# 👇 FORZAMOS EL USO DE SSL (Sin necesidad del archivo ca.pem)
+engine = create_engine(
+    DATABASE_URL,
+    connect_args={
+        "ssl": {
+            "ssl_disabled": False
+        }
+    }
+)
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

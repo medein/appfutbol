@@ -7,7 +7,7 @@ uvicorn[standard]==0.27.0
 python-multipart==0.0.6
 
 # Base de datos MySQL
-SQLAlchemy==2.0.25
+SQLAlchemy==2.0.44
 PyMySQL==1.1.0
 
 # Validacion y configuracion

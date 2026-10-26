@@ -834,7 +834,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: (cancha.imagenUrl != null && cancha.imagenUrl!.isNotEmpty)
                 ? ClipRRect(
                     child: Image.network(
-                      cancha.imagenUrl!,
+                      ApiService.urlAbsoluta(cancha.imagenUrl!) ?? '',
                       fit: BoxFit.cover,
                       width: 76,
                       height: 96,

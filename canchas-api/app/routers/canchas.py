@@ -241,7 +241,7 @@ async def subir_imagen_cancha(
     with open(ruta_completa, "wb") as f:
         f.write(contenido)
 
-    cancha.imagen_url = f"{settings.api_base_url}/static/canchas/{nombre_archivo}"
+    cancha.imagen_url = f"/static/canchas/{nombre_archivo}"
 
     db.commit()
     db.refresh(cancha)

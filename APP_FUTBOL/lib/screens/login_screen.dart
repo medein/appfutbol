@@ -64,11 +64,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
   /// Tras entrar, pedimos el permiso de notificaciones y reprogramamos los
   /// recordatorios de las reservas que ya tenía el usuario.
-  Future<void> _despuesDeEntrar() async {
-    await NotificacionService.pedirPermisos();
-    final proximas = await ApiService.getReservasProximas();
-    await NotificacionService.sincronizarRecordatorios(proximas);
+   Future<void> _despuesDeEntrar() async {
+    // Intentamos pedir permisos y sincronizar, pero si falla, 
+    // NO bloqueamos la entrada a la app.
+    try {
+      await NotificacionService.pedirPermisos();
+      final proximas = await ApiService.getReservasProximas();
+      await NotificacionService.sincronizarRecordatorios(proximas);
+    } catch (e) {
+      debugPrint('Error configurando notificaciones: $e');
+    }
 
+    // Pase lo que pase, navegamos a la pantalla principal
     if (!mounted) return;
     Navigator.pushAndRemoveUntil(
       context,
